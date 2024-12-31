@@ -9,6 +9,9 @@ export class LaunchConfig {
     tenant: string = '';
     launchBrowser: boolean = false;
     schemaUpdateMode: string = '';
+    accessToken: string = '';
+    expiresOn: Date | undefined = undefined;
+    authenticatedAs: string = '';
 
     constructor(json:any) {
         this.name = json.name;
